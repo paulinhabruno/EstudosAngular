@@ -20,7 +20,7 @@
     <h3>
       Comentários
     </h3>
-    <app-comment *ngFor="let comment of post.Answers" ></app-comment>
+    <app-comment *ngFor="let comment of post.Answers" [comment]="comment" ></app-comment>
 
     <div>
       <input placeholder="Comente este post" />

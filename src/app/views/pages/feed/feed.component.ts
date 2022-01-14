@@ -39,7 +39,7 @@ export class FeedComponent implements OnInit {
           created_at: '2021-11-10T18:13:15.000Z',
           Student: {
             id: 1,
-            name: 'Rafael',
+            name: 'Paula',
             image:
               'http://fiap-social-api.herokuapp.com/uploads/1636312523776.jpg',
           },
@@ -50,7 +50,7 @@ export class FeedComponent implements OnInit {
           created_at: '2021-11-10T19:50:59.000Z',
           Student: {
             id: 1,
-            name: 'Rafael',
+            name: 'Regina',
             image:
               'http://fiap-social-api.herokuapp.com/uploads/1636312523776.jpg',
           },
