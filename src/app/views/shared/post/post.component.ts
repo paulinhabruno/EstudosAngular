@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-post',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostComponent implements OnInit {
 
+  @Input() post: any;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  sendComment = () => { // é uma classe do postComment
+    alert("Enviando um comentário")
   }
 
 }

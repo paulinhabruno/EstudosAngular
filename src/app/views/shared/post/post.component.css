@@ -1,6 +1,6 @@
 article{
   margin: 14px;
-  background-color: var(--bgSecundary);
+  background-color: var(--bgSecondary);
 }
 
 article>header{
@@ -17,7 +17,7 @@ article>header>div>p{
 }
 
 article>header>div>span{
-  font-top: 4px;
+  margin-top: 4px;
   font-size: 14px;
 }
 
