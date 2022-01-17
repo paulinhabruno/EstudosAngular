@@ -1,5 +1,5 @@
 <article>
-  <header>
+  <header [routerLink]="['/post-detail', {post: post.id}]">
     <img src="/assets/profile.png" style="height: 50px;" />
     <div>
       <p>por {{post.Student.name}}</p>
@@ -24,7 +24,7 @@
 
     <div>
       <input placeholder="Comente este post" />
-      <button (click)="sendComment()" >Enviar</button> <!--quando coloca entre parêntes significa que está chamando a função do ts-->
+      <button (click)="notify.emit()" >Enviar</button> <!--quando coloca entre parêntes significa que está chamando a função do ts-->
     </div>
   </footer>
 </article>
