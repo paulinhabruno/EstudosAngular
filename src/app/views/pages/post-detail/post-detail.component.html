@@ -1,1 +1,25 @@
-<p>{{post}}</p>
+<article>
+  <header [routerLink]="['/post-detail', {postId: post.id}]">
+    <img src="/assets/profile.png" style="height: 50px;" />
+    <div>
+      <p>por {{post.Student.name}}</p>
+      <span>em {{post.created_at}}}</span>
+    </div>
+  </header>
+  <main>
+    <div>
+      <h2>{{post.title}}</h2> <!--Com dias {} faz-se a interpolação com o ts-->
+      <p>{{post.description}}}</p>
+    </div>
+    <img *ngIf="post.image" [src] = "post.image" alt="imagem do post" />  <!--o *ngIf é uma renderização condicional-->
+    <footer>
+      <p *ngFor="let category of post.Categories" >{{category.description}}</p>
+    </footer>
+  </main>
+  <footer>
+    <h3>
+      Comentários
+    </h3>
+    <app-comment *ngFor="let comment of post.Answers" [comment]="comment" ></app-comment>
+  </footer>
+</article>

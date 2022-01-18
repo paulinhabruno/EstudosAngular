@@ -9,6 +9,12 @@ article>header{
   display: flex;
   align-items: center;
   gap: 10px;
+
+  cursor: pointer;
+}
+
+article>header:hover{
+  color: var(--primary);
 }
 
 article>header>div>p{

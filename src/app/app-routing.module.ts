@@ -14,7 +14,7 @@ const routes: Routes = [
     component: FeedComponent
   },
   {
-    path: 'post-datail',
+    path: 'post-detail',
     component: PostDetailComponent
   }
 ]; // dentro da lista cadastramos as rotas

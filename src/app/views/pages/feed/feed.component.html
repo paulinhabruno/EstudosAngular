@@ -1,7 +1,7 @@
 <app-top-bar></app-top-bar>
 
 <section>
-  <app-post *ngFor="let post of posts" [post]="post" (notify) = "saveComent()" ></app-post>
+  <app-post *ngFor="let post of posts | async " [post]="post" (notify) = "saveComent()" ></app-post>
 
   <!--O ngFor vai dizer quantas vezes o post será inicializado-->
 </section>
